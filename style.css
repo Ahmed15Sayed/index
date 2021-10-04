@@ -1,0 +1,212 @@
+*, body ,html {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #eee;
+}
+
+/* End */
+
+/* start */
+
+.menu{
+    width: 100%;
+    background-color:#333 ;
+    color: #FFF;
+    height: 60px;
+}
+
+.menu #logo{
+    float: left;
+    height: 30px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    line-height:30px ;
+}
+
+.menu > ul {
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu > ul > li{
+    float: left;
+}
+
+.menu-item{
+    display: inline-block;
+    padding: 15px 20px;
+    height:30px;
+    line-height: 30px;
+    color: #FFFF;
+    text-decoration: none;
+}
+
+.menu-item:hover{
+    background-color: brown;
+    color: darkblue;
+}
+
+/* Start Contant*/
+
+.sub-contant{
+    position: absolute;
+    top:60px;
+    overflow:hidden;
+    background-color: #333;
+    max-height: 0;
+}
+
+.sub-contant a{
+    color:#FFF;
+    text-decoration: none;
+    
+}
+.sub-drop{
+    padding: 0;
+
+}
+.sub-drop ul{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+}
+.sub-drop ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+
+.menu-item:focus{
+    background-color:brown ;
+
+}
+
+.menu ul li:hover .sub-contant{
+    max-height: 400px;
+    transition: max-height 0.3s ease-in;
+    -webkit-transition: max-height 0.3s ease-in;
+    -moz-transition: max-height 0.3s ease-in;
+}
+.sub-drop ul li:hover {
+    background-color: brown;
+}
+#nmenu{
+    float: right;
+    padding-right: 102px;
+}
+.test{
+    transition: all 2s  ease;
+}
+h1{
+    /*position: absolute;*/
+    background-color: aquamarine;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 57px;
+    transform: skew(10deg, 10deg);
+    
+}
+h1{
+    transition: all 2s ease;
+    WIDTH: 193px;
+    FONT-SIZE: 75px;
+    MARGIN-LEFT: -1px;
+}
+/*///////////////////////////*/
+
+#loop{
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+#loop > div{
+    width: 20px;
+    height: 20px;
+    background-color: violet;
+    border-radius: 50%;
+    margin: 0 5px;
+    animation: drop .9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#loop .two{
+    animation-delay: .3s;
+}
+#loop .three{
+    animation-delay: .6s;
+}
+@keyframes drop{
+    to{
+        opacity: 0.2;
+        transform: translatey(-20px);
+
+    }
+}
+
+/*///////////////////////////*/
+
+.contant{
+    width: 600px;
+    margin: 0 auto;
+}
+image{
+    width:250px
+}
+.sumsung{
+    width: 250px;
+    height: 189px;
+    background-image: url(images/sumsung.jpg);
+    background-repeat: none;
+    background-size: cover;
+    margin: 0 auto;
+    margin-bottom: 14px;
+    border-radius: 50%;
+    box-shadow: -4px 0px 8px red;
+}
+.xawmi{
+    width: 250px;
+    height: 189px;
+    background-image: url(images/xiaomy.jpg);
+    background-repeat: none;
+    background-size: cover;
+    float: right;
+    margin-bottom: 14px;
+    border-radius: 28%;
+}
+.hawai{
+    width: 250px;
+    height: 189px;
+    background-image: url(images/image.png);
+    background-repeat: none;
+    background-size: cover;
+    margin-bottom: 14px;
+    border-radius: 28%;
+}
+.appel{
+    width: 250px;
+    height: 189px;
+    background-image: url(images/appel.jpg);
+    background-repeat: none;
+    background-size: cover;
+    float: right;
+    margin-bottom: 14px;
+    border-radius: 28%;
+}
+.lenovo{
+    width: 250px;
+    height: 189px;
+    background-image: url(images/lenovo.png);
+    background-repeat: none;
+    background-size: cover;
+    margin-bottom: 14px;
+    border-radius: 28%;
+}
